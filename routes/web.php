@@ -1,6 +1,6 @@
 <?php
 
-use App\http\Controllers\HomeController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-//Route::get('/', [HomeController::class,'index']);
+Route::get('/tasks/', [TaskController::class, 'index']);
+
+
