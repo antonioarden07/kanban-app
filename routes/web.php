@@ -13,5 +13,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', function () {
+    return view('home');
+});
 
-Route::get('/', [HomeController::class,'index']);
+//Route::get('/', [HomeController::class,'index']);
